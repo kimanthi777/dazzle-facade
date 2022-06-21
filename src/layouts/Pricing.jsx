@@ -5,7 +5,7 @@ import Apps11 from "../images/apps-11.svg"
 
 const Pricing = () => {
   return (
-    <section id="price">
+    <section id="pricing">
         <div className="mx-auto px-5 py-20 bg-gray-100">
             <div className="text-center">
                 <span className="text-blue-500">Pricing</span>

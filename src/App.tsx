@@ -1,12 +1,38 @@
 
+//#modules
+
+
+//@clerk setup
+import { 
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  // UserButton,
+  useUser,
+  RedirectToSignIn,
+ } from '@clerk/clerk-react';
+// #hooks
+import { useNavigate } from "react-router-dom";
+
 import './App.css';
 import Index from './layouts';
 
-function App() {
+// @clerk key
+const FRONTEND_KEY = process.env.REACT_APP_CLERK_FRONTEND_API
+
+function App() { 
+  const navigate = useNavigate();
   return (
-   <>
-   <Index />
-   </>
+   <ClerkProvider frontendApi={FRONTEND_KEY} navigate={(to) => navigate(to)}>
+    <SignedIn>
+    <Index />
+    </SignedIn>
+
+    {/**On Sign Out */}
+    <SignedOut>
+    <RedirectToSignIn />
+    </SignedOut>
+   </ClerkProvider>
   );
 }
 
