@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
         <div className="container mx-auto text-center px-5 pb-10 text-white">
             <p>2022 Sublime - All Rights Reserved : : Sublime</p>
-            <p>Check Source Code <a href='lol.com' _blank="true" className="text-slate-500 underline">@GitHub</a></p>
+            <p>Check Source Code <a href='https://github.com/Qodestackr' target="_blank" className="text-slate-500 underline">@GitHub</a></p>
         </div>
     </footer>
 )
