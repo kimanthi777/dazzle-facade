@@ -26,7 +26,7 @@ const HeaderNav = () => {
   return (
     <header className="fixed w-full h-20 bg-[#161a2e] z-10 transition-all delay-150">
         <div className="container mx-auto flex justify-between items-center text-white px-5 py-6 transition-all delay-150">
-            <a href="/" className="text-3xl font-medium transition-all delay-150">sublime</a>
+            <a href="/" className="text-3xl font-medium transition-all delay-150">Dazzle</a>
             <nav>
                 <button className="md:hidden flex flex-col justify-between gap-1" >
 
