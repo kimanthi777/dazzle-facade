@@ -1,6 +1,4 @@
-
-//#modules
-
+import React from 'react'
 
 //@clerk setup
 import {
@@ -16,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 
 import './App.css';
 import Index from './layouts';
-import Text from '@core/components/Common/Text/Text'
+import { Text } from './core/components'
 
 // @clerk key
 const FRONTEND_KEY = process.env.REACT_APP_CLERK_FRONTEND_API

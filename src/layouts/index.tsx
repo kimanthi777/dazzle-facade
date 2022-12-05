@@ -1,3 +1,4 @@
+import React from 'react'
 
 import HeaderNav from './HeaderNav'
 import HeroSection from './HeroSection'
@@ -8,12 +9,12 @@ import Features from './Features'
 
 const Index = () => (
     <>
-    <HeaderNav />
-    <HeroSection />
-    <Features/>
-    <Pricing />
-    <FreeTrial />
-    <Footer />
+        <HeaderNav />
+        <HeroSection />
+        <Features />
+        <Pricing />
+        <FreeTrial />
+        <Footer />
     </>
 )
 
