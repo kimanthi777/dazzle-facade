@@ -5,3 +5,5 @@ Given the rapid changes in how we run modern business, having a solid way to man
 - Identify your business drivers
 - Refine/ manage your payroll 
 - HCM solution selection criteria.
+
+### Steps to implement a payroll system
