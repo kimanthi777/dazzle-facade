@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Text } from '../../../core/components/Common'
 
-import Apps9 from "../../../images/apps-9.svg"
-import Apps10 from "../../../images/apps-10.svg"
-import Apps11 from "../../../images/apps-11.svg"
+import Apps9 from "../../../assets/images/apps-9.svg"
+import Apps10 from "../../../assets/images/apps-10.svg"
+import Apps11 from "../../../assets/images/apps-11.svg"
 
 function Pricing() {
     return (

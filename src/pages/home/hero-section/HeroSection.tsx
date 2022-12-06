@@ -3,8 +3,8 @@ import React from 'react'
 // components
 import { Text } from '../../../core/components/Common'
 // assets
-import playSVG from "../../../images/play.svg"
-import Banner3 from "../../../images/banner3-1.png"
+import playSVG from "../../../assets/images/play.svg"
+import Banner3 from "../../../assets/images/banner3-1.png"
 
 const HeroSection = () => {
     return (

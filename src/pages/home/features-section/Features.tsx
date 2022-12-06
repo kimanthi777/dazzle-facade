@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Apps6 from "../../../images/apps-6.svg"
+import Apps6 from "../../../assets/images/apps-6.svg"
 // import CTAIMG2 from "./images/cta-img-2-1.svg"
 
 const Features = () => {
