@@ -1,2 +1,4 @@
 // Stores JSON files, theme info, & constants
-export { }
+
+export { CTACardInfo } from './features-section/CTACardInfo'
+export {FeaturesCardInfo} from './features-section/FeaturesCardInfo'

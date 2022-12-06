@@ -1,3 +1,5 @@
-Add React.lazy to lazy load other components!
+1. Add React.lazy to lazy load other components!
 
-Failed: Absolute imports could not work!
+2. Failed: Absolute imports could not work!
+
+3. when coding custom components/ polymorphic, I cannot figure out effectively how to extract basic features such as styles etc while providing a mechanism to extend or override what was basically passed... Working to improve on this*
