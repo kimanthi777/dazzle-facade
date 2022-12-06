@@ -15,6 +15,7 @@ import {
   NoticeBoard, Tickets, TimeSheet, Settings
 } from './pages'
 
+
 /***
  * TODO: Object based routing
  */
@@ -23,7 +24,6 @@ function App() {
   return (
     <>
       <HeaderNav />
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
