@@ -12,7 +12,9 @@ import {
   Employees, Organization, Invoicing,
   Reciepts, Recruitment, Reports,
   Payroll, Projects, dbBackups as DbBackups,
-  NoticeBoard, Tickets, TimeSheet, Settings
+  NoticeBoard, Tickets, TimeSheet, Settings,
+
+  Error404
 } from './pages'
 
 
@@ -42,6 +44,7 @@ function App() {
         <Route path='/tickets' element={<Tickets />} />
         <Route path='/timesheet' element={<TimeSheet />} />
         <Route path='/settings' element={<Settings />} />
+        <Route path='*' element={<Error404 />} />
       </Routes>
       <Footer />
     </>

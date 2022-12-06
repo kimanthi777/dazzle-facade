@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const headerLinks = [
     {
@@ -25,9 +26,9 @@ const headerLinks = [
 
 export function HeaderNav() {
     return (
-        <header className="fixed w-full h-20 bg-[#161a2e] z-10 transition-all delay-150">
+        <header className="fixed top-0 mb-2 w-full h-20 bg-[#161a2e] z-10 transition-all delay-150">
             <div className="container mx-auto flex justify-between items-center text-white px-5 py-6 transition-all delay-150">
-                <a href="/" className="text-3xl font-medium transition-all delay-150">Dazzle</a>
+                <Link to="/" className="text-3xl font-medium transition-all delay-150">Dazzle</Link>
                 <nav>
                     <button className="md:hidden flex flex-col justify-between gap-1" >
 
@@ -40,7 +41,7 @@ export function HeaderNav() {
                         {
                             headerLinks.map((link, index) => (
                                 <li key={index}>
-                                    <a href={link.uri} className="hover:text-[#5a5df5]">{link.name}</a>
+                                    <Link to={link.uri} className="hover:text-[#5a5df5]">{link.name}</Link>
                                 </li>
                             ))
                         }

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const primaryLinks = [
     'Home',
@@ -46,7 +47,7 @@ export function Footer() {
                             {
                                 primaryLinks.map((link, index) => (
                                     <li key={index}>
-                                        <a href="/" className="hover:text-[#5a5df5]">{link}</a>
+                                        <Link to="/" className="hover:text-[#5a5df5]">{link}</Link>
                                     </li>
                                 ))
                             }
@@ -58,7 +59,7 @@ export function Footer() {
                             {
                                 serviceLinks.map((serviceLink, index) => (
                                     <li key={index}>
-                                        <a href="/" className="hover:text-[#5a5df5]">{serviceLink}</a>
+                                        <Link to="/" className="hover:text-[#5a5df5]">{serviceLink}</Link>
                                     </li>
                                 ))
                             }
@@ -70,7 +71,7 @@ export function Footer() {
                             {
                                 productsLinks.map((productsLink, index) => (
                                     <li key={index}>
-                                        <a href="/" className="hover:text-[#5a5df5]">{productsLink}</a>
+                                        <Link to="/" className="hover:text-[#5a5df5]">{productsLink}</Link>
                                     </li>
                                 ))
                             }
