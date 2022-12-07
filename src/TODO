@@ -1,5 +1,72 @@
-1. Add React.lazy to lazy load other components!
 
-2. Failed: Absolute imports could not work!
+DazzleHR uses a customized extension (Better comments) to add highlighting in VS Code 
+Tags include: [*, ?, example, done, todo...],
+This app is under my 40 days of Frontend development: Building React apps with Typescript & adapting to best practices
+& design patterns incrementally
 
-3. when coding custom components/ polymorphic, I cannot figure out effectively how to extract basic features such as styles etc while providing a mechanism to extend or override what was basically passed... Working to improve on this*
+
+### Global App Issues
+TODO: Lazy load components
+TODO: Fix absolute imports e.g @components, @hooks, @core, etc
+TODO: Generics: & custom classNames at glance [Override basic styles from base component when adding wrappers]
+TODO: Add scripts to automate deployment, tests, and more  
+DONE: Implement custom hooks
+
+### TASKS
+
+**Day 1:**
+- Build Sign up, Login, Logout and Reset Password Pages
+- Add Auth logic
+Stack: Firebase
+
+**Day 2-6**
+- Organization Module
+  - Company
+  - Location 
+  - Department
+  - Announcements
+  - Expense
+  - Expense type
+  - Notice Board
+TODO: Add clients section (customer)
+Stack: Tailwind CSS, React Query, and Context API
+
+**Day 7-12**
+- Employees Module
+  - CRUD => employees
+
+**Day 12-14**
+- Timesheet: Attendance details, leaves etc
+  - Integrate a calendar component that syncs with Google
+
+**Day 15-17**
+- Payroll module
+
+**Day 18-20**
+- Projects module
+
+**Day 21-24**
+- Invoicing & Reports
+
+**Day 25-30**
+- Recruitment & Training
+ - Onboarding & Offboaring features
+
+**Day 31-33**
+- Add channels:
+  - Emails, slack, Web push notifications
+
+**Day 34-37**
+- Custom settings, DB backups, &  
+
+**Day 38-39**
+Offer improvements 
+
+**Day 40**
+Write what I've learnt ...
+
+### Future improvements
+- Build a R. Native App
+- Convert to PWA & push to playstore as the Lite version of the Mobile App
+- Add a way to sign digital certificates/ documents + legal procedures
+- Turn into fully fledged ERP :: Customers handling, & Accounting [transactions,financial statements, etc]
