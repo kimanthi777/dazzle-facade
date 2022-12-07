@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 
-import { Routes, Route } from 'react-router-dom'
+import { useRoutes } from './core/hooks'
 
 //layouts
 import { HeaderNav, Footer } from './layouts';
@@ -23,32 +23,35 @@ import {
  */
 
 function App() {
+
+  const appRoutes = useRoutes([
+    { path: '/', element: <Home /> },
+    { path: '/login', element: <Login /> },
+    { path: '/register', element: <Register /> },
+    { path: '/reset-password', element: <ResetPassword /> },
+    { path: '/employees', element: <Employees /> },
+    { path: '/organization', element: <Organization /> },
+    { path: '/invoicing', element: <Invoicing /> },
+    { path: '/reciepts', element: <Reciepts /> },
+    { path: '/recruitment', element: <Recruitment /> },
+    { path: '/reports', element: <Reports /> },
+    { path: '/payroll', element: <Payroll /> },
+    { path: '/projects', element: <Projects /> },
+    { path: '/db-backups', element: <DbBackups /> },
+    { path: '/notice-board', element: <NoticeBoard /> },
+    { path: '/tickets', element: <Tickets /> },
+    { path: '/timesheet', element: <TimeSheet /> },
+    { path: '/settings', element: <Settings /> },
+    { path: '*', element: <Error404 /> },
+  ])
+
   return (
     <>
       <HeaderNav />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/reset-password' element={<ResetPassword />} />
-        <Route path='/employees' element={<Employees />} />
-        <Route path='/organization' element={<Organization />} />
-        <Route path='/invoicing' element={<Invoicing />} />
-        <Route path='/reciepts' element={<Reciepts />} />
-        <Route path='/recruitment' element={<Recruitment />} />
-        <Route path='/reports' element={<Reports />} />
-        <Route path='/payroll' element={<Payroll />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/db-backups' element={<DbBackups />} />
-        <Route path='/notice-board' element={<NoticeBoard />} />
-        <Route path='/tickets' element={<Tickets />} />
-        <Route path='/timesheet' element={<TimeSheet />} />
-        <Route path='/settings' element={<Settings />} />
-        <Route path='*' element={<Error404 />} />
-      </Routes>
+      {appRoutes}
       <Footer />
     </>
   );
 }
 
-export default App;
+export default App; 
