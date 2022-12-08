@@ -19,23 +19,6 @@ DONE: Implement custom hooks
 - Add Auth logic
 Stack: Firebase
 
-/**
- *TODO: File a bug on TS git Repo
- ? Project React, TypeScript Version: 4.9.3
- *  node_modules/@types/node/globals.d.ts:72:13 - error TS2403: Subsequent variable declarations must have the same type.  Variable 'AbortSignal' must be of type '{ new (): AbortSignal; prototype: AbortSignal; abort(reason?: any): AbortSignal; timeout(milliseconds: number): AbortSignal; }', but here has type '{ new (): AbortSignal; prototype: AbortSignal; }'.
-
-72 declare var AbortSignal: {
-               ~~~~~~~~~~~
-
-  ../../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts:2071:13
-    2071 declare var AbortSignal: {
-                     ~~~~~~~~~~~
-    'AbortSignal' was also declared here.
-
-
-Found 1 error in node_modules/@types/node/globals.d.ts:72
- */
-
 **Day 2-6**
 - Organization Module
   - Company

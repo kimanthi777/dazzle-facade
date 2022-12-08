@@ -1,12 +1,13 @@
 
 ## A SaaS [HR]
+A WAI-ARIA compliant HR system
 
 ## Tech Stack
-- cloudRun -> Backend is private
+- CloudRun -> Backend is private
 - Nestjs
 - MongoDB
 - Redis
-- MeiliSearch
+- MeiliSearch: indexing and querying data [instant filter, sorts, etc]
 - Docker
 - GitHub actions [CI/CD] for CI pipelines
 
