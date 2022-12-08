@@ -1,6 +1,4 @@
 import React from 'react'
-import './App.css'
-
 import { useRoutes } from './core/hooks'
 
 //layouts
