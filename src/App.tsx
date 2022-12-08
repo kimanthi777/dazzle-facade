@@ -15,7 +15,7 @@ import {
   Error404
 } from './pages'
 
-
+import { UnderConstruction } from './core/components/Common/UnderConstruction';
 /***
  * TODO: Object based routing
  */
@@ -26,21 +26,22 @@ function App() {
     { path: '/', element: <Home /> },
     { path: '/login', element: <Login /> },
     { path: '/register', element: <Register /> },
-    { path: '/reset-password', element: <ResetPassword /> },
-    { path: '/employees', element: <Employees /> },
-    { path: '/organization', element: <Organization /> },
-    { path: '/invoicing', element: <Invoicing /> },
-    { path: '/reciepts', element: <Reciepts /> },
-    { path: '/recruitment', element: <Recruitment /> },
-    { path: '/reports', element: <Reports /> },
-    { path: '/payroll', element: <Payroll /> },
-    { path: '/projects', element: <Projects /> },
-    { path: '/db-backups', element: <DbBackups /> },
-    { path: '/notice-board', element: <NoticeBoard /> },
-    { path: '/tickets', element: <Tickets /> },
-    { path: '/timesheet', element: <TimeSheet /> },
-    { path: '/settings', element: <Settings /> },
+    { path: '/reset-password', element: <UnderConstruction /> /**<ResetPassword /> */ },
+    { path: '/employees', element: <UnderConstruction /> /**<Employees />  */ },
+    { path: '/organization', element: <UnderConstruction /> /**<Organization /> */ },
+    { path: '/invoicing', element: <UnderConstruction /> /**<Invoicing /> */ },
+    { path: '/reciepts', element: <UnderConstruction /> /**<Reciepts /> */ },
+    { path: '/recruitment', element: <UnderConstruction /> /**<Recruitment /> */ },
+    { path: '/reports', element: <UnderConstruction /> /**<Reports /> */ },
+    { path: '/payroll', element: <UnderConstruction /> /**<Payroll /> */ },
+    { path: '/projects', element: <UnderConstruction /> /**<Projects /> */ },
+    { path: '/db-backups', element: <UnderConstruction /> /**<DbBackups /> */ },
+    { path: '/notice-board', element: <UnderConstruction /> /**<NoticeBoard /> */ },
+    { path: '/tickets', element: <UnderConstruction /> /**<Tickets /> */ },
+    { path: '/timesheet', element: <UnderConstruction /> /**<TimeSheet /> */ },
+    { path: '/settings', element: <UnderConstruction /> /**<Settings /> */ },
     { path: '*', element: <Error404 /> },
+    { path: '/uc', element: <UnderConstruction /> }
   ])
 
   return (

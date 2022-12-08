@@ -11,3 +11,5 @@ export function Text<E extends React.ElementType = 'div'>({ as, className, child
         <TagName className={className}>{children}</TagName>
     )
 }
+
+Text.displayName = '@Text'
