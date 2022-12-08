@@ -5,7 +5,6 @@ type TextOwnProps<E extends React.ElementType> = {
     as?: E
 }
 
-// we now have all the types of the element except for the types that we have specified ourselves 
 /***
  * In JavaScript, we use Object.keys to get a list of property keys
  * ? keyof Type: Works in types and returns a literal union type
@@ -15,4 +14,6 @@ type TextOwnProps<E extends React.ElementType> = {
  * DONE: Build polymorpic component
  */
 
+// we now have all the types of the element except for the types that we have specified ourselves 
 export type TextProps<E extends React.ElementType> = TextOwnProps<E> & Omit<React.ComponentProps<E>, keyof TextOwnProps<E>>
+// we are removing our own types since they are props???
