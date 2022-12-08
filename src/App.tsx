@@ -21,13 +21,14 @@ import { UnderConstruction } from './core/components/Common/UnderConstruction';
  */
 
 function App() {
+  const isAuthenticated = true
 
   const appRoutes = useRoutes([
     { path: '/', element: <Home /> },
     { path: '/login', element: <Login /> },
     { path: '/register', element: <Register /> },
     { path: '/reset-password', element: <UnderConstruction /> /**<ResetPassword /> */ },
-    { path: '/employees', element: <UnderConstruction /> /**<Employees />  */ },
+    { path: '/employees', element: <Employees /> },
     { path: '/organization', element: <UnderConstruction /> /**<Organization /> */ },
     { path: '/invoicing', element: <UnderConstruction /> /**<Invoicing /> */ },
     { path: '/reciepts', element: <UnderConstruction /> /**<Reciepts /> */ },
@@ -48,7 +49,7 @@ function App() {
     <>
       <HeaderNav />
       {appRoutes}
-      <Footer />
+      {isAuthenticated ? '' : <Footer />}
     </>
   );
 }

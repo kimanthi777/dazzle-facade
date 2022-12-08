@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const primaryLinks = [
     'Home',
@@ -20,7 +20,7 @@ const serviceLinks = [
 const productsLinks = [
     'Time and Attendance',
     'Human Resource',
-    'Payroll, compliance, & payouts',
+    'Payroll & compliance',
     'Perks and Benefits',
     'Performance Management',
     'Expense claims',
@@ -47,7 +47,7 @@ export function Footer() {
                             {
                                 primaryLinks.map((link, index) => (
                                     <li key={index}>
-                                        <Link to="/" className="hover:text-[#5a5df5]">{link}</Link>
+                                        <Link to="/organization" className="hover:text-[#5a5df5]">{link}</Link>
                                     </li>
                                 ))
                             }
@@ -59,7 +59,7 @@ export function Footer() {
                             {
                                 serviceLinks.map((serviceLink, index) => (
                                     <li key={index}>
-                                        <Link to="/" className="hover:text-[#5a5df5]">{serviceLink}</Link>
+                                        <Link to="/organization" className="hover:text-[#5a5df5]">{serviceLink}</Link>
                                     </li>
                                 ))
                             }
@@ -71,7 +71,7 @@ export function Footer() {
                             {
                                 productsLinks.map((productsLink, index) => (
                                     <li key={index}>
-                                        <Link to="/" className="hover:text-[#5a5df5]">{productsLink}</Link>
+                                        <Link to="/organization" className="hover:text-[#5a5df5]">{productsLink}</Link>
                                     </li>
                                 ))
                             }
@@ -82,7 +82,7 @@ export function Footer() {
 
             </div>
             <div className="container mx-auto text-center px-5 pb-10 text-white">
-                <p>2022 Dazzle HR - All Rights Reserved : : Dazzle HR</p>
+                <p>{new Date().getFullYear()} Dazzle HR - All Rights Reserved.</p>
                 <p>Check Source Code <a href='https://github.com/Qodestackr/Dazzle-UI' target="_blank" className="text-slate-500 underline">@GitHub</a></p>
             </div>
         </footer>
