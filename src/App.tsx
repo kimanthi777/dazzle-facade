@@ -44,7 +44,6 @@ function App() {
     { path: '*', element: <Error404 /> },
     { path: '/uc', element: <UnderConstruction /> }
   ])
-
   return (
     <>
       <HeaderNav />
