@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // components
 import { Text } from '../../../core/components/Common'
 
@@ -30,7 +30,7 @@ const HeroSection = () => {
                             <Link to="/" className="px-3 py-2 bg-white text-black rounded-md hover:bg-[#FE6B7E] hover:text-white">
                                 Request Demo
                             </Link>
-                            </li>
+                        </li>
                         <li>
                             <Link to="/" className="flex items-center"><img className="w-5 h-5" src={playSVG} alt="" /> <span
                                 className="ml-1">How it works</span>

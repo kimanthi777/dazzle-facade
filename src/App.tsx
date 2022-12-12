@@ -21,7 +21,7 @@ import { UnderConstruction } from './core/components/Common/UnderConstruction';
  */
 
 function App() {
-  const isAuthenticated = true
+  const isAuthenticated = false
 
   const appRoutes = useRoutes([
     { path: '/', element: <Home /> },
