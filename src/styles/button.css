@@ -1,0 +1,3 @@
+.btn-base {
+    @apply border border-solid text-white bg-slate-500 py-1 mx-2;
+}

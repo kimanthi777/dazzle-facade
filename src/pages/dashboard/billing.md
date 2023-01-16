@@ -44,8 +44,8 @@
 - Worked days/ Overtime (From sheets)
 - NITA management
 - Paid leaves mgt
-- Pension mgt
-- ESOP mgt
+- !Pension mgt
+- !ESOP mgt
 - Projects mgt
 - Mortgage mgt
 - Shifts mgt
