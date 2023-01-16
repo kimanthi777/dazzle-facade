@@ -53,9 +53,9 @@ function App() {
   ])
   return (
     <>
-      {/* <HeaderNav /> */}
+       <HeaderNav />
       {appRoutes}
-      {/* {isAuthenticated ? '' : <Footer />} */}
+      {isAuthenticated ? '' : <Footer />}
     </>
   );
 }
