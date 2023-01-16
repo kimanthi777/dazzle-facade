@@ -1,7 +1,7 @@
 
 export * from './auth'
 export * from './home'
-export * from './db-backups'
+export * from './dashboard/db-backups'
 export * from './employees'
 export * from './invoicing'
 export * from './notice-board'

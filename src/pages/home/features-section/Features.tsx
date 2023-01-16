@@ -11,7 +11,7 @@ import { FeaturesCardInfo, CTACardInfo } from '../../../data'
 const Features = () => {
     return (
         <FeaturesContainer>
-            <FeaturesTitle title="With all the Features You Need" description="Credibly grow premier ideas rather than bricks and clicks." />
+            <FeaturesTitle title="With all the Features You Need" description="Credibly grow premier with our all-in one HR solutions. Made for SMEs." />
 
             <FeaturesCardContainer>
                 {FeaturesCardInfo.map(card => (

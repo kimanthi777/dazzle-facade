@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Text } from '../../core/components/Common'
+import { Text } from '../../core/components/common'
 import {
     FiMail,
     FiSettings,

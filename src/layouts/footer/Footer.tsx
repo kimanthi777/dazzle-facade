@@ -61,7 +61,7 @@ export function Footer() {
             <div className='container mx-auto text-center px-5 pb-10 text-white'>
                 <Text as='p' className='text-slate-600'>{new Date().getFullYear()} Dazzle HR - All Rights Reserved</Text>
                 <Text as='p' className='text-slate-600'>
-                    Source code on
+                    Source code on {" "}
                     <Text as='a'
                         href='https://github.com/Qodestackr/Dazzle-UI'
                         target='_blank'

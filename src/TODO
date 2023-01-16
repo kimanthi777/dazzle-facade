@@ -4,7 +4,6 @@ Tags include: [*, ?, example, done, todo...],
 This app is under my 40 days of Frontend development: Building React apps with Typescript & adapting to best practices
 & design patterns incrementally.
 
-
 ### Global App Issues
 TODO: Lazy load components
 TODO: Fix absolute imports e.g @components, @hooks, @core, etc
@@ -33,15 +32,15 @@ Stack: Tailwind CSS, React Query, and Context API
 
 **Day 7-12**
 - Employees Module
-  - CRUD => employees
+- CRUD => employees
 
 **Day 12-14**
 - Timesheet: Attendance details, leaves etc
-  - Integrate a calendar component that syncs with Google
+- Integrate a calendar component that syncs with Google
 
 **Day 15-17**
 - Payroll module
-TODO: Read Govt Tax compliance, make it customizaable by the admin as changes evolve
+TODO: Read Govt Tax compliance, make it customizable by the admin as changes evolve
 **Day 18-20**
 - Projects module
 
@@ -50,11 +49,11 @@ TODO: Read Govt Tax compliance, make it customizaable by the admin as changes ev
 
 **Day 25-30**
 - Recruitment & Training
- - Onboarding & Offboaring features
+- Onboarding & Offboaring features
 
 **Day 31-33**
 - Add channels:
-  - Emails, slack, Web push notifications
+- Emails, slack, Web push notifications
 
 **Day 34-37**
 - Custom settings, DB backups, &  

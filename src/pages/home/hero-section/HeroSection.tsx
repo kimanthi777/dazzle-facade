@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 // components
-import { Text } from '../../../core/components/Common'
+import { Text } from '../../../core/components/common'
 
 // assets
 import playSVG from "../../../assets/images/play.svg"
@@ -22,7 +22,7 @@ const HeroSection = () => {
 
                     <Text as='p' className="mb-8 leading-relaxed">
                         Automate your Employee workflow - from information management, employee onboarding,
-                        leave management, exits, and report analytics.
+                        leave management, exits, and report analytics. Dazzle HR is the People orchestration system.
                     </Text>
 
                     <ul className="flex space-x-4">

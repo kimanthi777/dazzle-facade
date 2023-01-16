@@ -1,2 +1,6 @@
-// components folder contains more of the reusable pieces rather than larger components
-export { Error404, Text } from './Common'
+export * from './calender'
+export * from './carousel'
+export * from './common'
+export * from './drop-zone'
+export * from './modals'
+export * from './social'
