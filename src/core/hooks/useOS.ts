@@ -32,4 +32,3 @@ export function useOs(): OS {
 
   return 'undetermined';
 }
-

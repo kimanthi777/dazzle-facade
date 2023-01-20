@@ -1,1 +1,1 @@
-export { dbBackups } from './dbBackups'
+export * from './dbBackups'

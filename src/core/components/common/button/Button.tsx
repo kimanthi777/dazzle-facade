@@ -1,8 +1,14 @@
+import React from 'react'
+
 /**
- * TODO: Polymorphic Button component that extends to whatever needs
+ * TODO: Polymorphic Button component [classnames]
  */
 
-import React from 'react'
+type ButtonProps = {
+    chilren?: React.ReactNode;
+    primary?: boolean;
+    secondary?: boolean;
+}
 
 export default function Button() {
     return (

@@ -1,7 +1,7 @@
 /**
- * TODO: ✅️ Create Hooks by Category=> 
+ * TODO: split into files [caching, storage, data-fetching, UI]
  * TODO: ✅️ Caching, storage(localstorage, indexDB, session storage), Data Fetching, UI(mouse scroll, window resize, etc)
- * 
+ * PLOTTWIST: 
  */
 
 

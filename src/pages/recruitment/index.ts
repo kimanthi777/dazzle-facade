@@ -1,1 +1,1 @@
-export { Recruitment } from './Recruitment'
+export * from './Recruitment'

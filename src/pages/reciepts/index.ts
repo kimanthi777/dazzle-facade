@@ -1,1 +1,1 @@
-export { Reciepts } from './Reciepts'
+export * from './Reciepts'

@@ -1,7 +1,6 @@
 import React from 'react'
 
-export const DemoDetails = () => {
-
+export function DemoDetails() {
     return (
         <div>
             <h1>Your Personal Demo</h1>

@@ -7,4 +7,8 @@ export const useIsomorphicEffect = typeof document !== 'undefined' ? useLayoutEf
 
 // DEF: corresponding or similar in form and relations.
 
-/**An isomorphism is a mapping for which an inverse mapping also exists. It's a way to describe equivalence. In programming, you often have the choice to implement a particular feature in more than one way. These alternatives may be equivalent, in which case they're isomorphic**/
+/**An isomorphism is a mapping for which an inverse mapping also exists. 
+ * It's a way to describe equivalence. In programming, you often have the choice to 
+ * implement a particular feature in more than one way. These alternatives may be 
+   equivalent, in which case they're isomorphic
+**/

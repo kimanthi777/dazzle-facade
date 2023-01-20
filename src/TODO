@@ -1,71 +1,107 @@
-
-DazzleHR uses a customized extension (Better comments) to add highlighting in VS Code 
-Tags include: [*, ?, example, done, todo...],
-This app is under my 40 days of Frontend development: Building React apps with Typescript & adapting to best practices
-& design patterns incrementally.
-
-### Global App Issues
+### Global
 TODO: Lazy load components
-TODO: Fix absolute imports e.g @components, @hooks, @core, etc
+TODO: Fix absolute imports e.g @components, @hooks, @core, etc[use Craco to avoid eject on webpack]
 TODO: Generics: & custom classNames at glance [Override basic styles from base component when adding wrappers]
 TODO: Add scripts to automate deployment, tests, and more  
 DONE: Implement custom hooks
 
-### TASKS
+### APP-WIDE TASKS
 
-**Day 1:**
-- Build Sign up, Login, Logout and Reset Password Pages
-- Add Auth logic
-Stack: Firebase
+**1 :**
+- Auth, 
 
-**Day 2-6**
+<!-- Profile :: Sign UP, Login, Reset Password, Update Profile, Logout, Reset Password -->
+Proof of concept:: Clerk.dev
+
+Needs: I need to scale authorization feature while still providing a way to make multiple options of authentication.
+Simply, adding a role to `User` is not enough. There is MULTIPLE WAYS I could implement a solution that will quickly adapt. CLAIMS, POLICIES, ATTRIBUTES? 
+
+:: chioce ABAC 
+
+- Payments, 
+:: Flutterwave,
+
+
+**2 :**
 - Organization Module
   - Company
   - Location 
   - Department
-  - Announcements
+  - Announcements<underlyingModel>/ Notice Board<UIComponent>
   - Expense
   - Expense type
-  - Notice Board
-TODO: Add clients section (customer)
-Stack: Tailwind CSS, React Query, and Context API
 
-**Day 7-12**
+
+TODO: Add clients section (customer)
+
+STACK: Tailwind CSS, React Query, and Context API
+
+**3 :**
 - Employees Module
 - CRUD => employees
 
-**Day 12-14**
+**4 :**
 - Timesheet: Attendance details, leaves etc
 - Integrate a calendar component that syncs with Google
 
-**Day 15-17**
+**5 :**
 - Payroll module
 TODO: Read Govt Tax compliance, make it customizable by the admin as changes evolve
-**Day 18-20**
+**6 :**
 - Projects module
 
-**Day 21-24**
+**7 :**
 - Invoicing & Reports
 
-**Day 25-30**
+**8 :**
 - Recruitment & Training
 - Onboarding & Offboaring features
 
-**Day 31-33**
+**9 :**
 - Add channels:
 - Emails, slack, Web push notifications
 
-**Day 34-37**
+**10 :**
 - Custom settings, DB backups, &  
 
-**Day 38-39**
-Offer improvements 
 
-**Day 40**
-Write what I've learnt ...
+### Write what I've learnt ...
+1. Building polymorphic components
+
+Benefits I get::
+_Flexibility anc Accesibility_
+
+Imagine you are building components to be used by other developers. 
+
+- `<Text />`: This component would initially be used as:
+```jsx
+<Text />
+<Text />
+<h2> dummy text </h1>
+```
+Employing proper patterns would make this component flexible, accessible, and fully reusable.
+
+```jsx
+<Text as="h1" text="some text here..."/>
+<Text as="h2"text="Yet another text!..">
+```
+The component is accessible in the sense that user can pass a more appropriate prop depending on the usecase
+```jsx
+<Text as="blockquote"/> {/** or span etc.**/}
+```
+
+However, it is slow to code every scenario possible. The hardest of all is to achieve inter-operability..
+A component should not just accept native DOM element. It should too take other custom components.
+
+```jsx
+import {Link} from 'react-router-dom'
+
+<Text as={Link} text="blah blah blah" > 
+{/** This component should now be able to accomodate props that Link adds**/}
+```
 
 ### Future improvements
-- Build a R. Native App
+- Build a R. Native App `<With Expo>`
 - Convert to PWA & push to playstore as the Lite version of the Mobile App
 - Add a way to sign digital certificates/ documents + legal procedures
 - Turn into fully fledged ERP :: Customers handling, & Accounting [transactions,financial statements, etc]

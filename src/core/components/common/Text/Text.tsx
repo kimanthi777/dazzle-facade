@@ -7,7 +7,6 @@ import { TextProps } from './text-types'
 // e.g <Text className = '' as = 'p'>{children} </p>
 export function Text<E extends React.ElementType = 'div'>({ as, className, children }: TextProps<E>) {
     const TagName = as || 'div'
-
     return (
         <TagName className={className}>{children}</TagName>
     )

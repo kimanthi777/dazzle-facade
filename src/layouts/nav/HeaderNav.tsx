@@ -65,4 +65,8 @@ export function HeaderNav() {
         </header>
     )
 }
-// Payroll, Organization, Reciept, Reports :: notifications icon, locale, settings icon, avatar icon 
+// Payroll, Organization, Reciept, Reports :: notifications icon, locale, settings icon, avatar icon
+
+// Red button<>Plan Actiovation required
+// Country
+// Profile:: Company name | Head Office....[]

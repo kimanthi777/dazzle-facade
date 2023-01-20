@@ -10,7 +10,8 @@ export function upperCaseFirstLetter(text: string) {
 */
 
 export function maskInput(text: string) {
-    // I suck at regex, will pull one from a library
+    // I suck at regex, 
+    // TODO: 
     const regexTextInput = /^(.{4}).*$/g
 
     return typeof text === 'string' ? text.replace(regexTextInput, '$1******') : ''

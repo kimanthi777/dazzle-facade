@@ -23,8 +23,11 @@ import TestCase from './ReducerTest'
 
 function App() {
   const isAuthenticated = false
+  // TODO: Write a function to parse element <Element /> from string to React Component
+  // useParseElement({path: string, element: string}) => (string && React.ElementType)
 
   const appRoutes = useRoutes([
+
     { path: '/', element: <Home /> },
     { path: 'login', element: <Login /> },
     { path: 'register', element: <Register /> },
@@ -47,13 +50,13 @@ function App() {
     { path: 'app-features', element: <UnderConstruction /> },
     { path: 'pricing', element: <UnderConstruction /> },
     { path: '/uc', element: <UnderConstruction /> }, /**@uc -> under construction */
-    { path: '/tests', element: <TestCase /> },
     { path: '*', element: <Error404 /> },
 
-  ])
+  ]);
+
   return (
     <>
-       <HeaderNav />
+      <HeaderNav />
       {appRoutes}
       {isAuthenticated ? '' : <Footer />}
     </>
