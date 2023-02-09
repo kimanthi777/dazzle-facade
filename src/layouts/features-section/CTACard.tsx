@@ -8,7 +8,7 @@ type CTACardType = {
     btnLink: string;
 }
 
-export function CTACard({ title, color, cardDescription, btnLink, ...rest}: CTACardType) {
+export function CTACard({ title, color, cardDescription, btnLink, ...rest }: CTACardType) {
     return (
         <div className="p-4 md:w-1/2 w-full">
             <div className="rounded-lg px-4 py-8 relative overflow-hidden bg-[#CEDDFF]">

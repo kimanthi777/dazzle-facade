@@ -4,7 +4,7 @@ export const headerLinks = [
         uri: '/pricing'
     },
     {
-        name: 'features',
+        name: 'Features',
         uri: '/app-features'
     },
     {

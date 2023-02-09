@@ -16,8 +16,8 @@ import {
 } from './pages'
 
 import { UnderConstruction } from './core/components';
-import TestCase from './ReducerTest'
-/***
+
+/**
  * TODO: Object based routing
  */
 

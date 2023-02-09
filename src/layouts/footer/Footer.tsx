@@ -65,7 +65,7 @@ export function Footer() {
                     <Text as='a'
                         href='https://github.com/Qodestackr/Dazzle-UI'
                         target='_blank'
-                        className='text-green-500 underline'>
+                        className='mx-2 text-green-500 underline hover:text-[#5a5df5] hover:cursor-pointer'>
                         GitHub
                     </Text>
 

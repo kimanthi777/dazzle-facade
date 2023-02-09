@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors');
 const themeColors = require('./theme-colors');
+const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -955,5 +956,22 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [
+    // plugin function takes an anonymous function
+    // The function takes an object that can destructure:
+    // addUtilities()
+    // matchUtilities()
+    // addComponents()
+    // matchComponents()
+    // addBase()
+    // addVariant()
+    // matchVariant()
+    // theme()
+    // config()
+    // corePlugins()
+    // e()
+    plugin(function ({ addUtilities, addComponents, e, config }) {
+
+    })
+  ],
 }
