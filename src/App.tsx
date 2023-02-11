@@ -49,7 +49,7 @@ function App() {
     { path: 'about', element: <UnderConstruction /> },
     { path: 'app-features', element: <UnderConstruction /> },
     { path: 'pricing', element: <UnderConstruction /> },
-    { path: '/uc', element: <UnderConstruction /> }, /**@uc -> under construction */
+    { path: '/uc', element: <UnderConstruction /> }, /**@uc -> /uc -> under construction */
     { path: '*', element: <Error404 /> },
 
   ]);
