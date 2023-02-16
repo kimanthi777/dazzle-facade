@@ -54,7 +54,7 @@ export function HeaderNav() {
                             </>
                             :
                             <li>
-                                <a href="https://accounts.modest.lemming-76.lcl.dev/sign-up#/?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F" className="px-3 py-2 bg-white text-black rounded-md hover:bg-[#5a5df5] hover:text-white">
+                                <a href="https://accounts.modest.lemming-76.lcl.dev/sign-up#/?redirect_url=http%3A%2F%2Flocalhost%3A3001%2F" className="px-3 py-2 bg-white text-black rounded-md hover:bg-[#5a5df5] hover:text-white">
                                     Try for free
                                 </a>
                             </li>}
