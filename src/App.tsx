@@ -16,6 +16,7 @@ import {
 } from './pages'
 
 import { UnderConstruction } from './core/components';
+import { Calendar } from './core/components/calender';
 
 /**
  * TODO: Object based routing
@@ -56,9 +57,10 @@ function App() {
 
   return (
     <>
-      <HeaderNav />
-      {appRoutes}
-      {isAuthenticated ? '' : <Footer />}
+      {/* <HeaderNav /> */}
+      {/* {appRoutes} */}
+      <Calendar />
+      {/* {isAuthenticated ? '' : <Footer />} */}
     </>
   );
 }
