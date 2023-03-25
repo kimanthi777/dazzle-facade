@@ -17,7 +17,7 @@ const HeroSection = () => {
                     className="flex flex-col lg:flex-grow md:w-1/2 lg:pr-8 md:items-start 
                        md:text-left items-center text-center mb-8 md:mb-0">
                     <Text as='h1' className='sm:text-4xl text-3xl mb-4 font-medium'>
-                        Get Full Control and Visibility <br /> of your Company with Strategic HR.
+                        Experience the Dazzling Future of Strategic HR<br /> Empowering and transforming workplaces.
                     </Text>
 
                     <Text as='p' className="mb-8 leading-relaxed">
