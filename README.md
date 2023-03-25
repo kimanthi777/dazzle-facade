@@ -3,13 +3,6 @@ A WAI-ARIA compliant HR system
 
 B2B Platform: An organization wants to outsource a robust system that will adapt to thier demands. Super Admin creates an account<HR>.
 
-He will be responsible for:
-- Handling billing, reciepts, deleting other accounts, and onboarding etc
-- Give other users permissions
-
-### Goal
-Merge everything I've learnt over the years on open source, internal school competitive programming, technical writing, and generally twinkling around with tools. The goal is to build a complete end-to-end personal project with a custom design system, implements typescript, incremental best practices.
-
 ### Code Conventions
 - I'm using a custom extension [Better comments] to add syntax highlighting on my comments @VS Code.
 - Where possible, single quotes on strings over double quotes
@@ -67,9 +60,6 @@ Hiring plan
 	
 Requisition approvals
 
-### Services 
-Award-winning global support
-	
 Onboarding
 	
 Self-guided
