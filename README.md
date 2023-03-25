@@ -68,6 +68,6 @@ Standard data import
 	
 Dedicated account manager
 
-If you find pride in your craft, it is tempting to pursue cleanliness in code. Do it for a while. But don't stop there. Don't be a clean code zealot. Clean code is not a goal. It's an attempt to make some sense out of the immense complexity of systems we're dealing with. Let clean code guide you. Then let it go.
+> If you find pride in your craft, it is tempting to pursue cleanliness in code. Do it for a while. But don't stop there. Don't be a clean code zealot. Clean code is not a goal. It's an attempt to make some sense out of the immense complexity of systems we're dealing with. Let clean code guide you. Then let it go.
 
-UI is a composition of components (Angular, React, etc), with composite and leaf components. Similarly, in the file system we have directories and files. Since the component tree and the file system have the same structure we can apply the same algorithms on top of them.
+> UI is a composition of components (Angular, React, etc), with composite and leaf components. Similarly, in the file system we have directories and files. Since the component tree and the file system have the same structure we can apply the same algorithms on top of them.
