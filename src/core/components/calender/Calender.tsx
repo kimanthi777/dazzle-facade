@@ -8,7 +8,6 @@ import enUS from 'date-fns/locale/en-US';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import '../../../styles/custom-calendar-styles.css';
 
-
 const locales = {
     'en-US': enUS,
 };
@@ -51,7 +50,7 @@ export const _Calendar = () => {
 
 
     return (
-        <div className="h-screen flex flex-col">
+        <div className="max-w-[80vw] mx-auto flex flex-col">
             <div className="flex-grow">
                 <Calendar
                     localizer={localizer}
@@ -78,4 +77,3 @@ export const _Calendar = () => {
         </div>
     );
 };
-

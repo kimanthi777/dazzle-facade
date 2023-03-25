@@ -57,10 +57,10 @@ function App() {
 
   return (
     <>
-      {/* <HeaderNav /> */}
-      {/* {appRoutes} */}
+      <HeaderNav />
+      {appRoutes}
       <Calendar />
-      {/* {isAuthenticated ? '' : <Footer />} */}
+      {isAuthenticated ? '' : <Footer />}
     </>
   );
 }
