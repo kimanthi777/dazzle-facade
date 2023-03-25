@@ -13,15 +13,30 @@
     "baseUrl": ".", /* Specify the base directory to resolve non-relative module names. */
     /* Specify a set of entries that re-map imports to additional lookup locations. */
     "paths": {
-      "@/*": [
-        "./src/*"
+      "@": [
+        "src"
       ],
-      "@core/*": [
-        "./src/core/*"
+      "@core": [
+        "src/core"
       ],
-      "@layouts/*": [
-        "./src/layouts/*"
+      "@layouts": [
+        "src/layouts"
       ],
+      "@data": [
+        "src/data"
+      ],
+      "@pages": [
+        "src/pages"
+      ],
+      "@routes": [
+        "src/routes"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@assets": [
+        "src/assets"
+      ]
     },
     "allowUmdGlobalAccess": true, /* Allow accessing UMD globals from modules. */
     "allowJs": true, /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
@@ -43,6 +58,5 @@
   },
   "include": [
     "src"
-  ],
-  "extends": "./tsconfig.paths.json"
+  ]
 }

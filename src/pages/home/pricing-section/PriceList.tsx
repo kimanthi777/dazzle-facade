@@ -12,9 +12,9 @@ function PriceList({ plan, price, featureList }: any) {
                         <Text as='span' className="mb-1 ml-1">/month</Text>
                     </div>
                     <ul className='mt-2'>
-                        {/** ! A hacky way of defining children!I doubt if I'll even remember this myself in coming years */}
-                        {featureList.map((feature: any, index: any) => (
-                            <li><Text as='span' key={index} className='w-3 h-3 bg-blue-500 rounded-full inline-block mr-1'>{''}</Text>{feature}</li>
+                        {/** ! A hacky way of defining children!I doubt if I'll even remember this myself in coming months */}
+                        {featureList.map((feature: any, index: number) => (
+                            <li key={index}><Text as='span' className='w-3 h-3 bg-blue-500 rounded-full inline-block mr-1'>{''}</Text>{feature}</li>
                         ))}
 
                     </ul>

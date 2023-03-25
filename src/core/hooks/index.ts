@@ -17,3 +17,5 @@ export {
     useParams,
     useSearchParams,
 } from 'react-router-dom';
+
+export * from './useAppRoutes'
