@@ -50,8 +50,8 @@ export const _Calendar = () => {
 
 
     return (
-        <div className="max-w-[80vw] mx-auto flex flex-col">
-            <div className="flex-grow">
+        <div className="w-full flex flex-col items-center">
+            <div className="w-full lg:w-3/4 xl:w-1/2 flex-grow">
                 <Calendar
                     localizer={localizer}
                     events={myEventsList}
@@ -68,9 +68,7 @@ export const _Calendar = () => {
                             </div>
                         ),
                     }}
-
                     dayPropGetter={dayPropGetter}
-
                     style={{ height: 500 }}
                 />
             </div>

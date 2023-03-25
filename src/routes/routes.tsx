@@ -1,5 +1,3 @@
-import { useRoutes } from '../core/hooks'
-
 //layouts
 import { HeaderNav, Footer } from '../layouts';
 
