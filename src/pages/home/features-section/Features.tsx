@@ -6,7 +6,7 @@ import {
     FeaturesCard, FeaturesTitle
 } from '../../../layouts/features-section'
 
-import { FeaturesCardInfo, CTACardInfo } from '../../../data'
+import { FeaturesCardInfo, CTACardInfo } from '@data'
 
 const Features = () => {
     return (

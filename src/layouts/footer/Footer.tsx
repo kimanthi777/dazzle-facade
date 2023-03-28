@@ -5,7 +5,7 @@ import { Text } from '../../core/components'
 import SectionTitle from './SectionTitle'
 import LinksWrapper from './LinksWrapper'
 import Subscribe from './Subscribe'
-import { primaryLinks, serviceLinks, productsLinks } from '../../data'
+import { primaryLinks, serviceLinks, productsLinks } from '@data'
 
 export function Footer() {
     return (

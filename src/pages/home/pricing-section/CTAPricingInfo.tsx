@@ -1,8 +1,8 @@
 import React from 'react'
 import { Text } from '../../../core/components'
-import Apps9 from '../../../assets/images/apps-9.svg'
-import Apps10 from '../../../assets/images/apps-10.svg'
-import Apps11 from '../../../assets/images/apps-11.svg'
+import Apps9 from '@assets/images/apps-9.svg'
+import Apps10 from '@assets/images/apps-10.svg'
+import Apps11 from '@assets/images/apps-11.svg'
 
 function CTAPricingInfo() {
     return (

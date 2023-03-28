@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Text } from '../../core/components'
+import { Text } from '../../core'
 
 function Subscribe() {
     return (

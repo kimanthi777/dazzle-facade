@@ -17,7 +17,7 @@
         "src"
       ],
       "@core": [
-        "src/core"
+        "src/core/*"
       ],
       "@layouts": [
         "src/layouts"

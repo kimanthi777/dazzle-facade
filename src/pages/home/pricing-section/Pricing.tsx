@@ -7,7 +7,7 @@ import {
     Lite as LitePrice,
     Pro as ProPrice,
     ProMax as ProMaxPrice
-} from '../../../data'
+} from '@data'
 
 function Pricing() {
     return (

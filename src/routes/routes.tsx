@@ -1,5 +1,5 @@
 //layouts
-import { HeaderNav, Footer } from '../layouts';
+import { HeaderNav, Footer } from '@layouts';
 
 //pages
 import {
@@ -10,12 +10,11 @@ import {
     NoticeBoard, Tickets, TimeSheet, Settings,
 
     Error404
-} from '../pages'
+} from '@pages'
 
 import { UnderConstruction } from '../core/components';
-import { Calendar } from '../core/components/calender';
 
-const routes = [
+export const routes = [
     { path: '/', element: <Home /> },
     { path: 'login', element: <Login /> },
     { path: 'register', element: <Register /> },
@@ -51,5 +50,3 @@ const routes = [
     { path: 'notes', element: <Error404 /> },
     { path: 'onboarding', element: <Error404 /> },
 ]
-
-export default routes

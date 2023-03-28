@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import { Text } from '../../../core/components/common'
 
 // assets
-import playSVG from "../../../assets/images/play.svg"
-import Banner3 from "../../../assets/images/banner3-1.png"
+import playSVG from "@assets/images/play.svg"
+import Banner3 from "@assets/images/banner3-1.png"
 
 const HeroSection = () => {
     return (

@@ -2,7 +2,7 @@ module.exports = {
     webpack: {
         alias: {
             "@": "src",
-            "@core": "src/core",
+            "@core": "src/core/*",
             "@layouts": "src/layouts",
             "@data": "src/data",
             "@pages": "src/pages",

@@ -1,6 +1,6 @@
 import AppLayout from './AppLayout'
 
-import { Calendar } from './core/components/calender';
+import { Calendar } from './core';
 
 function App() {
 
