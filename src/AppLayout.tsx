@@ -16,10 +16,10 @@ export default function AppLayout({ children }: AppLayoutProps) {
 
     return (
         <>
-            <HeaderNav />
-            {appRoutes}
+            {/* <HeaderNav /> */}
+            {/* {appRoutes} */}
             {children}
-            {isAuthenticated ? '' : <Footer />}
+            {/* {isAuthenticated ? '' : <Footer />} */}
         </>
     )
 }
