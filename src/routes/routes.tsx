@@ -49,4 +49,9 @@ export const routes = [
     { path: 'history', element: <Error404 /> },
     { path: 'notes', element: <Error404 /> },
     { path: 'onboarding', element: <Error404 /> },
+    /*
+    {path: 'notifications', element: 
+    <Notification title="Error" type="error">This is an error notification</Notification>
+    }
+    */
 ]
