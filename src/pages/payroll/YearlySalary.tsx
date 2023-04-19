@@ -1,6 +1,8 @@
 import React from 'react'
+import {usePageTitle} from '../../core'
 
 export function YearlySalary() {
+    usePageTitle('Yearly Salary list')
     return (
         <>
             Request Yearly salary Summary

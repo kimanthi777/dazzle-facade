@@ -1,4 +1,5 @@
-import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
+import { Calendar, useCalendar, MantineProvider } from '@mantine/core';
+import { dateFnsLocalizer } from 'react-big-calendar';
 import format from 'date-fns/format';
 import parse from 'date-fns/parse';
 import startOfWeek from 'date-fns/startOfWeek';
@@ -8,70 +9,56 @@ import enUS from 'date-fns/locale/en-US';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import '../../../styles/custom-calendar-styles.css';
 
+
 const locales = {
-    'en-US': enUS,
+  'en-US': enUS,
 };
 
 const localizer = dateFnsLocalizer({
-    format,
-    parse,
-    startOfWeek,
-    getDay,
-    locales,
+  format,
+  parse,
+  startOfWeek,
+  getDay,
+  locales,
 });
 
-type _CalendarProps = {
-    title: string,
-}
 
-export const _Calendar = () => {
-    const today = new Date();
-    const yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1);
-    const myEventsList = [
-        {
-            title: 'Event today',
-            start: today,
-            end: today,
-        },
-        {
-            title: 'Event yesterday',
-            start: yesterday,
-            end: yesterday,
-        },
-    ];
+const MyCalendar = () => {
+  const { value, onChange } = useCalendar({
+    value: new Date(),
+  });
 
+  const myEventsList = [
+    {
+      title: 'Event today',
+      start: new Date(),
+      end: new Date(),
+    },
+    {
+      title: 'Event yesterday',
+      start: new Date(new Date().setDate(new Date().getDate() - 1)),
+      end: new Date(new Date().setDate(new Date().getDate() - 1)),
+    },
+  ];
 
-    const dayPropGetter = (date: Date) => {
-        const day = new Date().getDate();
-        const isToday = date.getDate() === day;
-        return isToday ? { style: { backgroundColor: '#48bb78' } } : {};
-    };
+  const dayStyle = {
+    backgroundColor: '#48bb78',
+  };
 
-
-    return (
-        <div className="w-full flex flex-col items-center">
-            <div className="w-full lg:w-3/4 xl:w-1/2 flex-grow">
-                <Calendar
-                    localizer={localizer}
-                    events={myEventsList}
-                    startAccessor="start"
-                    endAccessor="end"
-                    className="bg-white rounded-lg shadow overflow-hidden"
-                    components={{
-                        event: (event) => (
-                            <div
-                                className="px-3 py-2 border-b border-gray-400 cursor-pointer"
-                                title={event.title}
-                            >
-                                {event.title}
-                            </div>
-                        ),
-                    }}
-                    dayPropGetter={dayPropGetter}
-                    style={{ height: 500 }}
-                />
-            </div>
-        </div>
-    )
+  return (
+    <Calendar
+      value={value}
+      onChange={onChange}
+      events={myEventsList}
+      localizer={localizer}
+      views={['month']}
+      formats={{
+        monthHeaderFormat: 'MMMM yyyy',
+        dayFormat: 'd',
+        dayRangeHeaderFormat: ({ start, end }:any) =>
+          `${format(start, 'MMM d')} - ${format(end, 'MMM d')}`,
+      }}
+      dayStyle={dayStyle}
+    />
+  );
 };

@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 export const ContactForm = () => (
     <form className='flex flex-col border border-solid border-black'>
         <div className='flex flex-col md:flex-row gap-2'>

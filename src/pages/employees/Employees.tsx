@@ -1,7 +1,10 @@
 import React from 'react'
+import {usePageTitle} from '../../core'
 import { Sidebar } from '../../layouts'
 
 export function Employees() {
+  usePageTitle('Employees')
+  
   return (
     <>
       <Sidebar />

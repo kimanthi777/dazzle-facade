@@ -1,6 +1,8 @@
 import React from 'react'
+import {usePageTitle} from '../../../core'
 
 export function CreateNewOrg() {
+    usePageTitle('Create New Org')
     return (
         <>
             Let's get started

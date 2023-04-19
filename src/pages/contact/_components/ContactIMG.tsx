@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const ContactIMG = () => (
-    <img src="" alt="Contact Us Image" className="w-full h-12 object-fill" />
+export const ContactIMG = ({src}:any) => (
+    <img src={src} alt="Contact Us" className="w-full h-12 object-fill" />
 )

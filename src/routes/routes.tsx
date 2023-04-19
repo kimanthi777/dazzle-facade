@@ -1,6 +1,7 @@
 //layouts
 import { HeaderNav, Footer } from '@layouts';
 
+
 //pages
 import {
     Home, Login, Register, ResetPassword,
@@ -13,6 +14,7 @@ import {
 } from '@pages'
 
 import { UnderConstruction } from '../core/components';
+import Test from './Test';
 
 export const routes = [
     { path: '/', element: <Home /> },
@@ -49,6 +51,8 @@ export const routes = [
     { path: 'history', element: <Error404 /> },
     { path: 'notes', element: <Error404 /> },
     { path: 'onboarding', element: <Error404 /> },
+    {path: 'notifications', element: <Test/>}
+    
     /*
     {path: 'notifications', element: 
     <Notification title="Error" type="error">This is an error notification</Notification>
