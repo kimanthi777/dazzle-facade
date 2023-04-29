@@ -1,8 +1,8 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 export function Projects() {
-  usePageTitle('Projects')
+  useDocumentTitle('Projects')
   return (
     <div>Projects</div>
   )

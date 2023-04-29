@@ -1,12 +1,12 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 import { ContactForm } from './_components/ContactForm'
 import { ContactIMG } from './_components/ContactIMG'
 import { LocationMap } from './_components/LocationMap'
 
 const Contact = () => {
-    usePageTitle('Contact Us')
+    useDocumentTitle('Contact Us')
 
     return (
         <div>

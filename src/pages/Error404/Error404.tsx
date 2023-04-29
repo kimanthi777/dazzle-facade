@@ -1,9 +1,10 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
+
 import { Error404 as ErrorComponent} from '../../core/components'
 
 export function Error404() {
-    usePageTitle('Error | 404')
+    useDocumentTitle('Error | 404')
     return (
         <>
         <ErrorComponent />

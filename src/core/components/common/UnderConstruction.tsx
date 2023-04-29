@@ -5,14 +5,15 @@ import { Text } from './Text'
 
 import { useLocation } from 'react-router-dom'
 import { upperCaseFirstLetter } from '../../utils'
-import { usePageTitle } from '../../hooks'
+import { useDocumentTitle } from '../../hooks/use-document-title'
+
 
 type UnderConstructionProps = {
     pageTitle: string
 }
 
 export function UnderConstruction() {
-    usePageTitle('Under Construction')
+    useDocumentTitle('Under Construction')
 
     const currentLocation = useLocation()
     const pageName = (

@@ -1,8 +1,8 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 export function EditSalaryAllocation() {
-    usePageTitle('Edit Salary Allocation')
+    useDocumentTitle('Edit Salary Allocation')
     return (
         <>
             Edit Salary allocation

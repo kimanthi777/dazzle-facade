@@ -1,8 +1,8 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 export function YearlySalary() {
-    usePageTitle('Yearly Salary list')
+    useDocumentTitle('Yearly Salary list')
     return (
         <>
             Request Yearly salary Summary

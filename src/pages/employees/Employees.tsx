@@ -1,9 +1,9 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 import { Sidebar } from '../../layouts'
 
 export function Employees() {
-  usePageTitle('Employees')
+  useDocumentTitle('Employees')
   
   return (
     <>

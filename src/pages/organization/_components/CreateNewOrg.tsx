@@ -1,8 +1,9 @@
 import React from 'react'
-import {usePageTitle} from '../../../core'
+import { useDocumentTitle } from '../../../core/hooks/use-document-title'
 
 export function CreateNewOrg() {
-    usePageTitle('Create New Org')
+    useDocumentTitle('Create New Org')
+
     return (
         <>
             Let's get started

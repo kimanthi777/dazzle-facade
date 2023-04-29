@@ -1,8 +1,8 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 const MobilePage = () => {
-    usePageTitle('Mobile Page | Playstore')
+    useDocumentTitle('Mobile Page | Playstore')
     return (
         <div>MobilePage</div>
     )

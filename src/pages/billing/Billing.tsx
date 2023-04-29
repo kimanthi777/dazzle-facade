@@ -1,9 +1,8 @@
 import React from 'react'
-import { usePageTitle } from '../../core'
-
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 const Billing = () => {
-    usePageTitle('Billing')
+    useDocumentTitle('Billing')
     
     return (
         <div>Billing</div>

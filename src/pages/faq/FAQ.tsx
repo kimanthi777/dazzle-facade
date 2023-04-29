@@ -1,8 +1,8 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 const FAQ = () => {
-    usePageTitle('FAQ | Answers')
+    useDocumentTitle('FAQ | Answers')
     return (
         <div>FAQ</div>
     )

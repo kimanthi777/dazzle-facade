@@ -1,5 +1,5 @@
 export const SERVER_URL = () => {
-    if (!process.env.REACT_APP_ENV || process.env.REACT_APP_ENV == 'dev') {
+    if (!process.env.REACT_APP_ENV || process.env.REACT_APP_ENV === 'dev') {
         return 'http://localhost:5000'
     }
 

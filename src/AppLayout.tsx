@@ -1,5 +1,6 @@
 import React from 'react'
-import { useAppRoutes } from './core';
+import { useAppRoutes } from './core/hooks/use-app-routes';
+
 import { routes } from '@routes'
 
 //layouts
@@ -9,9 +10,11 @@ type AppLayoutProps = {
     children: React.ReactNode
 }
 
+
+
 export default function AppLayout({ children }: AppLayoutProps) {
     const isAuthenticated = false
-
+    
     const appRoutes = useAppRoutes(routes)
 
     return (

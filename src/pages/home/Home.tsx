@@ -1,5 +1,5 @@
 import React from 'react'
-import { usePageTitle } from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 import HeroSection from './hero-section/HeroSection'
 import Features from './features-section/Features'
@@ -8,7 +8,7 @@ import Pricing from './pricing-section/Pricing'
 
 
 export function Home() {
-    usePageTitle('Home')
+    useDocumentTitle('Home')
     return (
         <>
             <HeroSection />

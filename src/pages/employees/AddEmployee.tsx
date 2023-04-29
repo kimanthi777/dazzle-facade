@@ -1,9 +1,9 @@
 import React from 'react'
-import {usePageTitle} from '../../core'
+import { useDocumentTitle } from '../../core/hooks/use-document-title'
 
 
 export function AddEmployee() {
-    usePageTitle('Add Employee')
+    useDocumentTitle('Add Employee')
     return (
         <>
             {/* Name, Role<BASIC, SUPERVISOR, SALES, MARKETING,>, Salary<value> */}
