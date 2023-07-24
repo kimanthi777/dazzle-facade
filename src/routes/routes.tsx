@@ -1,5 +1,5 @@
 //layouts
-import { HeaderNav, Footer } from '@layouts';
+import { HeaderNav, Footer } from '../layouts';
 
 
 //pages
@@ -9,9 +9,8 @@ import {
     Reciepts, Recruitment, Reports,
     Payroll, Projects, dbBackups as DbBackups,
     NoticeBoard, Tickets, TimeSheet, Settings,
-
     Error404
-} from '@pages'
+} from '../pages'
 
 import { UnderConstruction } from '../core/components';
 import Test from './Test';
