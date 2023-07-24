@@ -1,16 +1,14 @@
 import React from 'react'
 import { useAppRoutes } from './core/hooks/use-app-routes';
 
-import { routes } from '@routes'
+import { routes } from './routes'
 
 //layouts
-import { HeaderNav, Footer } from '@layouts';
+import { HeaderNav, Footer } from './layouts';
 
 type AppLayoutProps = {
     children: React.ReactNode
 }
-
-
 
 export default function AppLayout({ children }: AppLayoutProps) {
     const isAuthenticated = false
